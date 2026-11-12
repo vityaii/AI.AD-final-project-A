@@ -43,4 +43,4 @@ python python/verify_project.py --host localhost --port 5432 --user postgres
 Количество назначений не измеряет производительность сотрудников.
 Без истории изменений нельзя определить скорость и своевременность завершения.
 
-Репозиторий: https://github.com/vityaii/AI.AD-final-project-A (приватный).
+Репозиторий: https://github.com/vityaii/AI.AD-final-project-A.
