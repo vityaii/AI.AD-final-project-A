@@ -8,17 +8,18 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
+RESULTS = ROOT / "results"
 
 def load(name):
-    source = ROOT / "results/queries" / name
-    manifest = json.loads((ROOT / "results/manifest.json").read_text(encoding="utf-8"))
+    source = RESULTS / "queries" / name
+    manifest = json.loads((RESULTS / "manifest.json").read_text(encoding="utf-8"))
     if hashlib.sha256(source.read_bytes()).hexdigest() != manifest["csv_sha256"][name]:
         raise RuntimeError("CSV изменён после выгрузки: " + name)
     with source.open(encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f))
 
 def main():
-    target = ROOT / "results/charts"
+    target = RESULTS / "charts"
     target.mkdir(parents=True, exist_ok=True)
     specs = [
         ("02_stage_distribution.csv", "stage", "task_count", "Распределение задач по этапам", "Задачи, шт.", "stages"),
@@ -32,7 +33,7 @@ def main():
         bars = ax.barh([r[label] for r in rows], values, color="#287c8e")
         ax.invert_yaxis()
         ax.set_xlabel(unit)
-        ax.set_title(title + "\nСинтетические данные · срез 12.11.2026")
+        ax.set_title(title + "\nСинтетические данные")
         if stem == "completion":
             ax.set_xlim(0, 105)
         else:

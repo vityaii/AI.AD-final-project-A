@@ -1,4 +1,4 @@
--- Все данные синтетические. Фиксированный срез: 2026-11-12.
+-- Данные синтетические.
 
 -- query: 01_project_counts
 -- Вопрос: Сколько задач в каждом проекте, включая пустые? Количество, шт.
@@ -21,7 +21,7 @@ LEFT JOIN columns c ON (c.project_id,c.id)=(t.project_id,t.column_id)
 GROUP BY u.id,u.username ORDER BY u.id;
 
 -- query: 04_overdue
--- Вопрос: Какие незавершённые задачи имеют известный срок раньше 2026-11-12? День среза ещё не просрочен.
+-- Вопрос: Какие незавершённые задачи просрочены? Срок сравнивается строго с контрольной датой.
 WITH snapshot AS (SELECT DATE '2026-11-12' AS as_of)
 SELECT t.id,t.project_id,t.task_number,t.title,t.assignee_id,t.due_date,
  s.as_of-t.due_date AS overdue_days
