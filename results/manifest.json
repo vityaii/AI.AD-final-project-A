@@ -1,0 +1,16 @@
+{
+  "snapshot": "2026-11-12",
+  "synthetic": true,
+  "exported_at_utc": "2026-11-12T10:53:43.396837+00:00",
+  "queries_sha256": "9515f62face48bd23c3ce1c3562a58c42a94ea8f93b9628f6a68652de1fd2a2c",
+  "csv_sha256": {
+    "01_project_counts.csv": "9328970e914b7e288e98eeef7606e83300317cd2e6480d670a124dcf0c759c7b",
+    "02_stage_distribution.csv": "d0ccc42b83a6290fc3e881252500f63dbe76a8c1f3f90480f84ad291990ac907",
+    "03_active_assignees.csv": "47deff23a02212a44d9417e7ed6d921839f110e37d1e8c66a1b0e11fcdff39d9",
+    "04_overdue.csv": "5dc7fa63550400dfa706173b0db0f14ffcc7a90a334895ba8bb163be02d77fa7",
+    "05_high_priority.csv": "de728ee7568c8e332eefb3adf33fa9272098149a7c03ac7fe872d9dcd5463ca6",
+    "06_average_duration.csv": "67a071a42067cefeea02a8a9075939a8a915d45071c79470f2d3df8321d6fe02",
+    "07_completion_ranking.csv": "221abc7e7d2ca7426b4d92c671f576e918c8e91e5aa6ecb057df707a16f8ef79",
+    "08_unassigned.csv": "4cde06b68261cba1e06b83cddbcf9bc61f9768927b519448317c8f9de0727e2f"
+  }
+}

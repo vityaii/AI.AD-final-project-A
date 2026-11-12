@@ -1,0 +1,5 @@
+project_id,project_name,task_count,done_count,completion_pct,completion_rank
+1,Учебный каталог,20,5,25.00,1
+2,Планирование семестра,20,5,25.00,1
+3,Архив материалов,20,5,25.00,1
+4,Пустой проект,0,0,,

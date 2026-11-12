@@ -1,0 +1,34 @@
+erDiagram
+ projects ||--o{ columns : contains
+ projects ||--o{ tasks : contains
+ columns ||--o{ tasks : stage
+ users ||--o{ tasks : creates
+ users |o--o{ tasks : assigned
+ users {
+  integer id PK
+  varchar username UK
+ }
+ projects {
+  integer id PK
+  text name
+ }
+ columns {
+  integer id PK
+  integer project_id FK
+  varchar name
+  integer position
+  boolean is_done
+ }
+ tasks {
+  integer id PK
+  integer project_id FK
+  integer column_id FK
+  integer user_id FK
+  integer assignee_id FK
+  integer task_number
+  varchar title
+  text text
+  varchar priority
+  date due_date
+  integer planned_duration_days
+ }

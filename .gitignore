@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
+.pgpass
+.pg_service.conf
+*.pem
+*.key
+.vscode/
+.DS_Store
+.pgdata/
+.mplconfig/
