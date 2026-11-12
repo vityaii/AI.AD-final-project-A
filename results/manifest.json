@@ -1,8 +1,7 @@
 {
-  "snapshot": "2026-11-12",
   "synthetic": true,
   "exported_at_utc": "2026-11-12T11:24:36.630848+00:00",
-  "queries_sha256": "9515f62face48bd23c3ce1c3562a58c42a94ea8f93b9628f6a68652de1fd2a2c",
+  "queries_sha256": "2acb294d467dbc4aabe277829e6c66584f905a7c93fc48005522bacc01ff0798",
   "csv_sha256": {
     "01_project_counts.csv": "8ae6c4a38b99d482fc295220618579cc0c7e25b5c550fba1408f70a15e0af43d",
     "02_stage_distribution.csv": "0622fbb4238e174432ebdb09e339bfcc66c840b06e9f81e4d9bfd40d2ea0d122",
